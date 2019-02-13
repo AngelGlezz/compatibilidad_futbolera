@@ -525,19 +525,19 @@ function finish_test(total){
   	var resulta = "";
 
   	if (total <= 1){
-	  	msg="<span>TU y " + pareja + " son NADA COMPATIBLES</span><br><br>Amig@, date cuenta. Parece que su relación no durará mucho, así como los DTs en el Veracruz. Pero calma, que aún pueden cambiar para que todo mejore.";
+	  	msg="<span>TÚ y " + pareja + " son NADA COMPATIBLES</span><br><br>Amig@, date cuenta. Parece que su relación no durará mucho, así como los DTs en el Veracruz. Pero calma, que aún pueden cambiar para que todo mejore.";
 	  	$("#indepth_resultados").css({"background-image": "url("+urlIndepth+"images/respuestas/4.png)"});
 	  	totalfb = "mal";
-  	} else if (total >= 2 && total <= 5){
-	  	msg="<span>TU y " + pareja + " son ALGO COMPATIBLES</span><br><br>Vaya que su relación no ha sido fácil pero cuál lo es, ni la de Messi y Argentina lo es, pero al final el amor puede con cualquier cosa.";
+  	} else if (total >= 2 && total < 5){
+	  	msg="<span>TÚ y " + pareja + " son ALGO COMPATIBLES</span><br><br>Vaya que su relación no ha sido fácil pero cuál lo es, ni la de Messi y Argentina, pero al final el amor puede con cualquier cosa.";
 	  	$("#indepth_resultados").css({"background-image": "url("+urlIndepth+"images/respuestas/3.png)"});
 	  	totalfb = "algo";
-  	} else if (total >= 4 && total < 6){
-	  	msg="<span>TU y " + pareja + " son MEDIO COMPATIBLES</span><br><br>Aunque no coordinan en todo, a ti y a tu pareja los une la pasión por el futbol. Ya sabes que no hay romance perfecto, ni el de Cristiano con el Madrid lo fue… así que venga ¡Vayan por todo!";
+  	} else if (total > 4 && total < 6){
+	  	msg="<span>TÚ y " + pareja + " son MEDIO COMPATIBLES</span><br><br>Aunque no coordinan en todo, a ti y a tu pareja los une la pasión por el futbol. Ya sabes que no hay romance perfecto, ni el de Cristiano con el Madrid lo fue… así que venga ¡Vayan por todo!";
 	  	$("#indepth_resultados").css({"background-image": "url("+urlIndepth+"images/respuestas/2.png)"});
 	  	totalfb = "maso";
   	} else if (total == 6){
-	  	msg="<span>TU y " + pareja + " son MUY COMPATIBLES</span><br><br> Son la pareja perfecta, como los tacos y el balón, como el Cruz Azul y los subcampeonatos, como el jersey al jugador. Messi y Antonella no son nada a lado de ustedes";
+	  	msg="<span>TÚ y " + pareja + " son MUY COMPATIBLES</span><br><br> Son la pareja perfecta, como los tacos y el balón, como el Cruz Azul y los subcampeonatos, como el jersey al jugador. Messi y Antonella no son nada a lado de ustedes";
 	  	$("#indepth_resultados").css({"background-image": "url("+urlIndepth+"images/respuestas/1.png)"});
 	  	totalfb = "bien";
   	}
